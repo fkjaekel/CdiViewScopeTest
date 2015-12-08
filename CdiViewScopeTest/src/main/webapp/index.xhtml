@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+        >
+
+<h:head>
+    <title>
+        CdiViewScopeTest
+    </title>
+</h:head>
+
+<h:body>
+    <h:form>
+        <h1>CdiViewScopeTest</h1>
+        <h2>Value: #{viewScopedBean.value}</h2>
+        <p:commandButton action="#{viewScopedBean.increaseValue()}" value="increase value" update="@form"/>
+    </h:form>
+</h:body>
+</html>
